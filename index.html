@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section id="crud_table" class="container py-5 bg-primary bg-opacity-50 my-5 ">
+        <div>
+            <h2 class="mb-3">Employee Details</h2>
+        </div>
+        <div class="container py-3 w-75">
+            <label for="empName">Name <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="empName">
+            <div class="alert alert-danger d-none my-2 py-1" id="msgName">Enter currect Name start with string</div>
+            <label for="empDepartment">Department <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="empDepartment">
+            <div class="alert alert-danger d-none my-1 py-1" id="msgDepartment">Enter currect Department</div>
+            <label for="empPhone">Phone <span class="text-danger">*</span></label>
+            <input type="number" class="form-control" id="empPhone"> 
+            <div class="alert alert-danger d-none my-1 py-1" id="msgPhone">Enter currect Phone</div>
+        </div>
+        <button type="button" class="float-end h-75 btn-primary rounded-pill px-3 " id="btnAdd">
+            <i class="fa-solid fa-plus"></i> Add New
+        </button>
+        <div class="clearfix"></div>
+        <input type="text" class="form-control my-3" placeholder="search By Name...">
+        <table class="table my-3 table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Department</th>
+                <th scope="col">Phone</th>
+              </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+          </table>
+    </section>
+
+
+
+    
+   <script src="js/bootstrap.bundle.min.js"></script> 
+   <script src="js/main.js"></script>
+</body>
+</html>
